@@ -25,6 +25,7 @@ class PlantsController < ApplicationController
   def destroy
     plant = Plant.find_by(params[:id])
     plant.destroy
+    head :no_content
   end
 
 
